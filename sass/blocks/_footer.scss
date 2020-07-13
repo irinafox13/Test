@@ -5,13 +5,13 @@
    &::before {
       content: '';
       display: block;
-      width: 135px;
+      width: 335px;
       height: auto;
       position: absolute;
       left: 0;
       top: 0;
       bottom: 0;
-      background: $bgFooterLeft url(../img/footer/black-block.png) right center / cover no-repeat;
+      background: $bgFooterLeft url(../img/footer/black-block.png) 70% center / cover no-repeat;
    }
    &-block {
       padding-bottom: 70px;

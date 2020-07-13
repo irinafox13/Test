@@ -1300,18 +1300,16 @@ img {
   margin: 0;
   position: relative;
   background-color: transparent;
-  padding: 0px 17px;
+  padding: 0px 10px;
 }
 
 .slider .slick-dots button {
   display: block;
-  font-size: 18px;
+  font-size: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #7B7675;
-  max-width: 100px;
-  width: 100%;
-  width: 35px;
+  width: 20px;
   height: 2px;
   background-color: #111A51;
   position: absolute;
@@ -1321,7 +1319,7 @@ img {
 .slider .slick-dots li.slick-active button {
   background-color: #007EDD;
   font-family: "Montserrat", sans-serif;
-  font-size: 22px;
+  font-size: 0;
   font-weight: 700;
   color: #007EDD;
 }
@@ -1404,13 +1402,13 @@ img {
 .footer::before {
   content: '';
   display: block;
-  width: 135px;
+  width: 335px;
   height: auto;
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
-  background: #2B3574 url(../img/footer/black-block.png) right center/cover no-repeat;
+  background: #2B3574 url(../img/footer/black-block.png) 70% center/cover no-repeat;
 }
 
 .footer-block {
@@ -1596,6 +1594,16 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .slider .slick-dots li {
+    padding: 0px 17px;
+  }
+  .slider .slick-dots button {
+    width: 35px;
+    font-size: 18px;
+  }
+  .slider .slick-dots li.slick-active button {
+    font-size: 22px;
   }
   .footer {
     padding-top: 190px;

@@ -35,6 +35,20 @@
          justify-content: center;
       }   
    }
+   .slider {
+      .slick-dots li{      
+         padding: 0px 17px;
+      }
+
+      .slick-dots button {
+         width: 35px;
+         font-size: 18px;
+      }
+      .slick-dots li.slick-active button {
+         font-size: 22px;
+      }
+   }
+   
    .footer {
       padding-top: 190px;
       z-index: -1;

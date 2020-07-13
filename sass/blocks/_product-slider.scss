@@ -65,26 +65,26 @@
    }
    .slick-prev {
       display: block;
-      background: url(../../img/arrow/left-arrow.svg) center center / 25px no-repeat;
+      background: url(../img/arrow/left-arrow.svg) center center / 25px no-repeat;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       left: -40px;
       transition: background-color 0.2s linear ;
       &:hover {
-         background: $btnColor2 url(../../img/arrow/left-arrow-white.svg) center center / 25px no-repeat;
+         background: $btnColor2 url(../img/arrow/left-arrow-white.svg) center center / 25px no-repeat;
       }      
    }
    .slick-next {
       display: block;
-      background: url(../../img/arrow/right-arrow.svg) center center / 25px no-repeat;
+      background: url(../img/arrow/right-arrow.svg) center center / 25px no-repeat;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       right: -40px;
       transition: background-color 0.2s linear ;
       &:hover {
-         background: $btnColor2 url(../../img/arrow/right-arrow-white.svg) center center / 25px no-repeat;
+         background: $btnColor2 url(../img/arrow/right-arrow-white.svg) center center / 25px no-repeat;
       }  
    }
    

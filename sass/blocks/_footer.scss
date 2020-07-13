@@ -1,9 +1,7 @@
 .footer {   
    position: relative;
    padding-top: 60px;
-   // z-index: -1;
-   // margin-top: -95px;
-   background: $bgFooter url(../../img/footer/dark-block.png) center center / cover no-repeat;
+   background: $bgFooter url(../img/footer/dark-block.png) center center / cover no-repeat;
    &::before {
       content: '';
       display: block;
@@ -13,7 +11,7 @@
       left: 0;
       top: 0;
       bottom: 0;
-      background: $bgFooterLeft url(../../img/footer/black-block.png) right center / cover no-repeat;
+      background: $bgFooterLeft url(../img/footer/black-block.png) right center / cover no-repeat;
    }
    &-block {
       padding-bottom: 70px;

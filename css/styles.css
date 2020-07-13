@@ -1398,7 +1398,7 @@ img {
 .footer {
   position: relative;
   padding-top: 60px;
-  background: #131C53 url(../../img/footer/dark-block.png) center center/cover no-repeat;
+  background: #131C53 url(../img/footer/dark-block.png) center center/cover no-repeat;
 }
 
 .footer::before {
@@ -1410,7 +1410,7 @@ img {
   left: 0;
   top: 0;
   bottom: 0;
-  background: #2B3574 url(../../img/footer/black-block.png) right center/cover no-repeat;
+  background: #2B3574 url(../img/footer/black-block.png) right center/cover no-repeat;
 }
 
 .footer-block {

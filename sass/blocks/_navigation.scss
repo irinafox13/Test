@@ -1,10 +1,9 @@
 .navigation {
-   // padding: 50px 15px 45px 15px;
    padding: 30px 15px 25px 15px;
    &__list {
       display: flex;
       align-items: center;
-      overflow-x: scroll;
+      overflow-x: hidden;
    }
    &__item {
       display: inline-block;

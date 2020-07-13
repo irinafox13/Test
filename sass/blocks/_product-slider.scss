@@ -1,0 +1,122 @@
+.slick-slider{
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+   overflow: hidden;
+   padding: 0;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+   align-items: center;
+   justify-content: center;
+   transform: translate3d(0,0,0);   
+}
+.product-title {
+   margin-bottom: 40px;
+   padding: 0 15px;
+   font-size: 24px;
+   letter-spacing: 1.4px;
+}
+.slider-big {
+   @include flex-center;
+   margin-bottom: 30px;
+   &__item {
+      @include flex-center;
+      img {
+         object-fit: cover;
+         object-position: center center;   
+      } 
+   }   
+}
+
+.slider-small {
+   // display: none;
+   position: relative;
+   @include flex-center;
+   &__item {
+      display: none;
+      margin: 0 12px;
+      img {
+         max-width: 100%;
+         object-fit: cover;
+         object-position: center center;
+      }
+      
+   }
+   
+   .slick-arrow {
+      width: 39px;
+      height: 39px;
+      border: 1px solid $btnColor2;
+      background-color: transparent;
+      font-size: 0;
+      outline: 0;
+      transition: background-color 0.2s linear;   
+         
+   }
+   .slick-arrow.slick-disabled{
+      border-color: $borderFormColor;
+      transition: background-color 0.2s linear;
+      &:hover {
+         background-color: $borderFormColor;
+      }
+   }
+   .slick-prev {
+      display: block;
+      background: url(../../img/arrow/left-arrow.svg) center center / 25px no-repeat;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -40px;
+      transition: background-color 0.2s linear ;
+      &:hover {
+         background: $btnColor2 url(../../img/arrow/left-arrow-white.svg) center center / 25px no-repeat;
+      }      
+   }
+   .slick-next {
+      display: block;
+      background: url(../../img/arrow/right-arrow.svg) center center / 25px no-repeat;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -40px;
+      transition: background-color 0.2s linear ;
+      &:hover {
+         background: $btnColor2 url(../../img/arrow/right-arrow-white.svg) center center / 25px no-repeat;
+      }  
+   }
+   
+   
+   
+
+}
+.video {
+   position: relative;
+   .play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include flex-center;
+      width: 40px;
+      height: 40px;
+      background-color: $lightColor;
+      border-radius: 50%;
+      border: 1px solid $btnColor2;
+      transition: background-color 0.3s ease;
+      &:hover {
+         background-color: $btnColor2;
+         .btn-play {
+            fill: $lightColor;
+         }
+      }
+   }
+   .btn-play {
+      position: absolute;
+      transform: translateX(2px);
+      fill: $btnColor2;  
+      transition: fill 0.3s ease;    
+   }
+}

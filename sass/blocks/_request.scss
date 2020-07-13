@@ -1,0 +1,40 @@
+.request {
+   padding: 0;
+   .container {
+      padding: 0;
+   }
+   &-box {
+      width: 100%;
+      display: block;
+      position: relative;
+      padding: 0;
+      margin: 0;
+   }   
+   &-block {
+      width: 100%;
+      @include flex-center;
+      flex-direction: column;
+      background-color: $bgDark;
+      z-index: 100;
+      margin: 0;
+      &__text {
+         font-family: $fontFamilySecondary;
+         font-weight: 600;
+         font-size: 16px;
+         color: $lightColor;
+         margin: 0;
+         line-height: 1.4;
+         letter-spacing: 1.8px;
+         text-align: center;
+         padding-top: 20px;
+      }
+      &__button-btn {
+         font-size: 12px;
+         width: 178px;
+         height: 56px;
+         @include flex-center;
+         letter-spacing: 0.7px;
+         margin: 20px auto;
+      }
+   }
+}

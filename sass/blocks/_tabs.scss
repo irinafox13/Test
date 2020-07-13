@@ -1,0 +1,64 @@
+
+.tabs-triggers {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   margin-top: 50px;
+   margin-bottom: 60px;
+   padding: 0 15px;
+   &::after {
+      content: '';
+      @include sectionLine;
+      height: 2px;
+      background-color: #EAEAEA;      
+   }
+   a {
+      padding: 0;
+   }
+   &__item {
+      max-width: 300px;
+      width: 100%;
+      min-height: 60px;
+      display: block;
+      color: $greyLightColor;
+      font-family: $fontFamilySecondary;
+      font-weight: 600;
+      font-size: 16px;
+      text-align: center;
+      padding: 30px;
+      line-height: 1.4;
+      text-decoration: none;
+      flex-grow: 1;
+      @include transitionColor;
+      &:hover {
+         color: $primaryColor;
+      }
+      &--active {
+         color: $btnColor2;
+         &:hover {
+            color: $btnColor2;
+         }
+         &::after {
+            content: '';
+            @include bottomLine;
+            bottom: 25px;
+            height: 6px;
+         }
+      }
+   }
+}
+
+.tabs-content {
+   padding: 0 15px;
+}
+
+.tabs-content__item {
+   display: none;
+   &--active {
+      display: block;
+   }
+}
+
+

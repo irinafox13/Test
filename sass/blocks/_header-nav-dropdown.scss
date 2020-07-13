@@ -1,0 +1,43 @@
+.nav-dropdown {
+   position: relative;
+   display: block;
+   z-index: 9;
+   cursor: pointer;
+   &__drop-icon {
+      display: inline-block;
+      margin-left: 5px;
+   }
+   &__drop {
+      display: none;
+      width: 300px;
+      position: absolute;
+      top: 105%;
+      left: 0;
+      border: 2px solid $lineColor;
+      border-radius: 0 0 4px 4px;       
+      background-color: $lightColor;
+      &-item {
+         display: block;
+         width: 296px;
+         height: 40px;  
+         color: $primaryColor;
+         font-size: 13px;
+         padding: 12px 0 12px 15px;
+         transition: background-color 0.2s linear,
+                     color 0.2s linear;
+         &:last-child {
+            border-bottom: none;
+         }
+         &:hover {
+            background-color: rgba($color: $lineColor, $alpha: 0.5);
+            border-color: $lineColor;
+            color: $btnColor2;
+         }
+      }
+   }
+}
+.nav-dropdown:hover {
+   .nav-dropdown__drop {
+      display: block;
+   }
+}

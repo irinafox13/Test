@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Грант-Трейд</title>
+   <meta name="description" content="">
+	<meta name="keywords" content="">	   
+
+   <link rel="shortcut icon" href="favicon.ico">
+
+   <!-- Bootstrap -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <!-- Google Font -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+   <!-- Animate.css -->
+   <link rel="stylesheet" href="css/animate.css">
+   <!-- Fancybox -->
+   <link rel="stylesheet" href="css/jquery.fancybox.css">   
+   <!-- Styles -->
+   <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   <header class="header">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="header-top col d-flex justify-content-between align-items-center">
+               <div class="header-top__logo">
+                  <a href="#"><img src="img/logo-header.svg" alt="Грант-Трейд"></a>
+               </div>
+                
+               <form class="header-top__search form-inline my-2 my-lg-0">
+                  <input class="form-control-search form-search mr-sm-2" type="search" placeholder="Поиск">
+                  <button class="btn my-2 my-sm-0" type="submit"><img src="img/search-icon.svg" alt="search-icon"></button>
+               </form>
+               
+               <div class="header__email email"><a class="header-link"
+                  href="email:info@gt-trade.ru">info@gt-trade.ru</a>
+               </div>
+               <div class="header__phone phone"><a class="header-link"
+                  href="tel:+7 (916) 416-11-38">+7 (916) 416-11-38</a>
+               </div>
+               <button class="header__button button button-com" type="submit">задать вопрос</button>
+               <div class="burger">
+                  <span></span>
+               </div> 
+            </div>    
+         </div>
+
+         <div class="row">
+            <div class="col">
+               <nav>                  
+                  <ul class="header-nav">
+                     <li class="nav-item nav-item__drop nav-dropdown">
+                        <a href="#" class="nav-link nav-link--active ">Оборудование
+                           <div class="nav-dropdown__drop-icon">
+                              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M1 1L5 5L9 1" stroke="#008BF3"/>
+                              </svg>
+                           </div>
+                        </a>
+                        <ul class="nav-dropdown__drop" >
+                           <li><a class="nav-dropdown__drop-item" href="#">Оборудование механической обработки</a></li>
+                           <li><a class="nav-dropdown__drop-item" href="#">Кузнечно-прессовое оборудование</a></li>
+                           <li><a class="nav-dropdown__drop-item" href="#">Сварочное оборудование</a></li>
+                           <li><a class="nav-dropdown__drop-item" href="#">Обработка и изготовление композита</a></li>
+                           <li><a class="nav-dropdown__drop-item" href="#">Окрасочное оборудование</a></li>
+                           <li><a class="nav-dropdown__drop-item" href="#">Подъемно-транспортное оборудование</a></li>
+                           <li><a class="nav-dropdown__drop-item" href="#">Гальваническое оборудование</a></li>
+                           <li><a class="nav-dropdown__drop-item" href="#">Оборудование для обработки неметаллов</a></li>
+                           <li><a class="nav-dropdown__drop-item" href="#">Термическое оборудование</a></li>
+                        </ul>                           
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Оснастка и инструмент</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Сервис</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Капитальный ремонт оборудования</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">О компании</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Бренды</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                     </li>                     
+                  </ul>  
+                   
+               </nav>                 
+            </div>
+         </div>
+      </div>
+   </header>
+   <main>
+      <section>
+         <div class="container">
+            <div class="row">
+               <div class="col navigation">
+                  <ul class="navigation__list">   
+                     <li class="navigation__item">
+                        <a class="navigation__link" href="#">Главная</a>
+                     </li>
+                     <li class="navigation__item">
+                        <a class="navigation__link" href="#">Оборудование</a>
+                     </li>
+                     <li class="navigation__item">
+                        <a class="navigation__link" href="#">Оборудование механической обработки</a>
+                     </li>
+                     <li class="navigation__item">
+                        <a class="navigation__link" href="#">Универсальные токарные станки</a>
+                     </li>
+                     <li class="navigation__item">
+                        <a class="navigation__link navigation__link--active" href="#">Оборудование механической обработки</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>         
+      </section>
+      <section class="product">
+         <div class="container">
+            <div class="row">
+               <!-- product-title -->
+               <h1 class="col-lg-9 product-title title">Горизонтальный токарный станок с наклонной станиной с чпу HWACHEON CUTEX-160B MC</h1>
+            </div>
+            <div class="row">
+               <div class="col-lg-8 product-slider">
+                  <div class="row">
+                     <!-- slider-big -->
+                     <div class="slider-big text-center">
+                        
+                        <div class="slider-big__item"><img src="img/slider/big-1.png" alt="#"></div>
+                        <div class="slider-big__item video"><img src="img/slider/01-video.jpg" alt="#">
+                           <a data-fancybox href="https://www.youtube.com/watch?v=R28lU1Ua8J0" class="play">
+                              <svg class="btn-play" width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M6 4L1.50571e-07 7.4641L4.53412e-07 0.535898L6 4Z" />
+                              </svg>
+                           </a>
+                        </div>
+                        <div class="slider-big__item"><img src="img/slider/02.png" alt="#"></div>
+                        <div class="slider-big__item"><img src="img/slider/03.jpg" alt="#"></div>
+                        <div class="slider-big__item"><img src="img/slider/02.png" alt="#"></div>
+                        <div class="slider-big__item"><img src="img/slider/03.jpg" alt="#"></div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <!-- slider-small -->
+                     <div class="col-10 offset-1 slider-small">
+                        
+                        <div class="slider-small__item"><img src="img/slider/big-1.png" alt="#"></div>
+                        <div class="slider-small__item video"><img src="img/slider/01-video.jpg" alt="#">
+                           <a data-fancybox href="https://www.youtube.com/watch?v=R28lU1Ua8J0" class="play">
+                              <svg class="btn-play" width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M6 4L1.50571e-07 7.4641L4.53412e-07 0.535898L6 4Z" />
+                              </svg>
+                           </a>
+                        </div>  
+                        <div class="slider-small__item"><img src="img/slider/02.png" alt="#"></div>                          
+                        <div class="slider-small__item"><img src="img/slider/03.jpg" alt="#"></div>
+                        <div class="slider-small__item"><img src="img/slider/02.png" alt="#"></div>
+                        <div class="slider-small__item"><img src="img/slider/03.jpg" alt="#"></div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-4">
+                  <!-- product-desc -->
+                  <div class="product-desc">
+                     <div class="product-desc__table">
+                        <!-- product-desc__table-subtitle -->
+                        <div class="col-6 product-desc__table-subtitle">
+                           <span class="product-desc__table-subtitle-item">Макс. Ø обработки: </span>
+                           <span class="product-desc__table-subtitle-item">РМЦ:</span>
+                           <span class="product-desc__table-subtitle-item">Мощность: </span>
+                           <span class="product-desc__table-subtitle-item">Вес:</span>
+                        </div>
+                        <!-- product-desc__table-parametr -->
+                        <div class="col-6 product-desc__table-parametr">
+                           <span class="product-desc__table-parametr-item">300 - 800 мм</span>
+                           <span class="product-desc__table-parametr-item">500 - 4000 мм</span>
+                           <span class="product-desc__table-parametr-item">5,5 - 30 кВт</span>
+                           <span class="product-desc__table-parametr-item">1000 - 5300 кг</span>
+                        </div>
+                     </div>
+                     <div class="product-desc__box">
+                        <!-- product-desc__price -->
+                        <div class="product-desc__price">Цена:от <span>59 513,85 USD *</span>
+                           <p class="product-desc__price-text">* Цена станка без НДС, с учетом доставки до завода покупателя, включая шеф-монтаж</p>
+                        </div>
+                        <!-- product-desc__request -->
+                        <div class="product-desc__request">
+                           <a href="#" class="product-desc__request-btn btn-request">Заявка на консультацию</a>
+                        </div>
+                     </div>
+                     
+                     <!-- product-desc__additionally -->
+                     <div class="product-desc__additionally">
+                        <div class="row">
+                           <div class="col-6">
+                              <div class="product-desc__additionally-item"><a href="#" class="product-desc__additionally-link">Купить в лизинг</a></div>
+                              <div class="product-desc__additionally-item"><a href="#" class="product-desc__additionally-link">Распечатать</a></div>
+                           </div>
+                           <div class="col-6">
+                              <div class="product-desc__additionally-item"><a href="#" class="product-desc__additionally-link">Программа Trade-in</a></div>
+                              <div class="product-desc__additionally-item"><a href="#" class="product-desc__additionally-link">Скачать спецификацию в pdf</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section>
+         <div class="container">
+            <div class="row">
+               <div class="tabs">     
+                  <div class="row tabs-triggers">
+                     <a href="#tab-1" class="col-2 tabs-triggers__item">Техническое описание</a>
+                     <a href="#tab-2" class="col-2 tabs-triggers__item">Технические характеристики</a>
+                     <a href="#tab-3" class="col-2 tabs-triggers__item">Базовая комплектация</a>
+                     <a href="#tab-4" class="col-2 tabs-triggers__item">Опциональные принадлежности</a>
+                  </div>    
+                  <div class="tabs-content">
+                     <!-- TAB-1 -->
+                     <div id="tab-1" class="tabs-content__item tabs-desc">
+                        <h2 class="tabs-desc__title title-h2">Серия CUTEX-160A MC</h2>
+                        <p class="tabs-desc__text text">Станки серии СКЕ предназначены для токарной обработки наружных и внутренних поверхностей деталей типа тел вращения со ступенчатым и криволинейным профилем различной сложности, включая нарезание резьбы, сверление, зенкерование. Обрабатываемый материал: сталь, чугун, легированные сплавы (нержавейка), цветные металлы и легкие сплавы.</p>
+                        <h2 class="tabs-desc__title title-h2">ОБЛАСТЬ ПРИМЕНЕНИЯ:</h2>
+                        <p class="tabs-desc__text text">Токарные станки с ЧПУ серии CKE нашли широкое применение в машиностроительном производстве. В основном используются при мелко- или среднесерийном изготовлении деталей, в ремонтных мастерских, в основных цехах механической обработки. Использование системы ЧПУ позволяет изготавливать детали со сложной конфигурацией, значительно увеличивает серийность производства, повышает эффективности обработки и снижает влияние человеческого фактора.</p>
+                        
+                        <div class="tabs-desc__application-area d-flex justify-content-between">
+                           <!-- card-1 -->
+                           <div class="tabs-desc__application-area-card">
+                              <h3 class="title-h3 tabs-desc__application-area-card-title">Машиностроение</h3>
+                              <div class="tabs-desc__application-area-card-image">
+                                 <img src="img/description/app-01.png" alt="#">
+                              </div>
+                           </div>
+                           <!-- card-2 -->
+                           <div class="tabs-desc__application-area-card">
+                              <h3 class="title-h3 tabs-desc__application-area-card-title">Автомобилестроение</h3>
+                              <div class="tabs-desc__application-area-card-image">
+                                 <img src="img/description/app-02.png" alt="#">
+                              </div>
+                           </div>
+                           <!-- card-3 -->
+                           <div class="tabs-desc__application-area-card">
+                              <h3 class="title-h3 tabs-desc__application-area-card-title">Тяжелая промышленность</h3>
+                              <div class="tabs-desc__application-area-card-image">
+                                 <img src="img/description/app-03.png" alt="#">
+                              </div>
+                           </div>
+                           <!-- card-4 -->
+                           <div class="tabs-desc__application-area-card">
+                              <h3 class="title-h3 tabs-desc__application-area-card-title">Изготовление деталей</h3>
+                              <div class="tabs-desc__application-area-card-image">
+                                 <img src="img/description/app-04.png" alt="#">
+                              </div>
+                           </div>
+                        </div>
+                        <!-- tabs-desc__feature -->
+                        <div class="tabs-desc__feature">
+                           <h2 class="tabs-desc__title title-h2">КОНСТРУКТИВНЫЕ ОСОБЕННОСТИ:</h2>
+                           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">                             
+
+                              <div class="col mb-4">
+                              <div class="card h-100">
+                                 <div class="card-box-image">
+                                    <img src="img/description/features-01.jpg" class="card-img-top" alt="...">
+                                 </div>                                 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Литая станина</h5>
+                                    <p class="card-text">Литая станина усилена ребрами жесткости. V-образные закаленные и отшлифованные направляющие станины покрыты специальным покрытием Turcite-B для перемещения с минимальным износом и трением.</p>
+                                 </div>
+                              </div>
+                              </div>
+                              <div class="col mb-4">
+                              <div class="card h-100">
+                                 <div class="card-box-image">
+                                    <img src="img/description/features-02.jpg" class="card-img-top" alt="...">
+                                 </div> 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Автоматическая система смазки</h5>
+                                    <p class="card-text">Автоматическая система смазки направляющих и ШВП обеспечивает централизованную своевременную смазку по основным движущимся элементам – ШВП, направляющим, что сокращает их износ, повышает плавность хода.</p>
+                                 </div>
+                              </div>
+                              </div>
+                              <div class="col mb-4">
+                              <div class="card h-100">
+                                 <div class="card-box-image">
+                                    <img src="img/description/features-03.jpg" class="card-img-top" alt="...">
+                                 </div> 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Бесступенчатая регулировка </h5>
+                                    <p class="card-text">Бесступенчатая регулировка скорости шпинделя позволяет производить регулировку оборотов шпинделя во всем диапазоне без остановки процесса обработки.</p>
+                                 </div>
+                              </div>
+                              </div>
+                              <div class="col mb-4">
+                              <div class="card h-100">
+                                 <div class="card-box-image">
+                                    <img src="img/description/features-04.jpg" class="card-img-top" alt="...">
+                                 </div> 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Револьверная голова – 6 позиционная</h5>
+                                    <p class="card-text">В стандартную комплектацию входит 6-ти позиционная револьверная головка, оснащенная муфтой для быстрой и плавной индексации инструмента. Смена инструмента происходит за 1-2 сек.</p>
+                                 </div>
+                              </div>
+                              </div>
+                              <div class="col mb-4">
+                                 <div class="card h-100">
+                                    <div class="card-box-image">
+                                       <img src="img/description/features-05.jpg" class="card-img-top" alt="...">
+                                    </div> 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Шпиндельный узел </h5>
+                                    <p class="card-text">Шпиндель изготовлен по технологии и под контролем специалистов IBAG Швейцария.</p>
+
+                                    <p class="card-text"></p>На станках установлен модернизированный усиленный шпиндель с крутящим моментом 1300 Нм (серия СКЕ6150), что является лучшим показателем в своем классе.</p>
+                                 </div>
+                                 </div>
+                              </div>
+                         </div>
+                     </div>
+
+
+                     </div>
+
+                     <!-- TAB-2 -->
+                     <div id="tab-2" class="tabs-content__item tabs-desc">
+                        <h2 class="tabs-desc__title title-h2">2. Серия CUTEX-160A MC</h2>
+                        <p class="tabs-desc__text text">Станки серии СКЕ предназначены для токарной обработки наружных и внутренних поверхностей деталей типа тел вращения со ступенчатым и криволинейным профилем различной сложности, включая нарезание резьбы, сверление, зенкерование. Обрабатываемый материал: сталь, чугун, легированные сплавы (нержавейка), цветные металлы и легкие сплавы.</p>
+                        <h2 class="tabs-desc__title title-h2">ОБЛАСТЬ ПРИМЕНЕНИЯ:</h2>
+                        <p class="tabs-desc__text text">Токарные станки с ЧПУ серии CKE нашли широкое применение в машиностроительном производстве. В основном используются при мелко- или среднесерийном изготовлении деталей, в ремонтных мастерских, в основных цехах механической обработки. Использование системы ЧПУ позволяет изготавливать детали со сложной конфигурацией, значительно увеличивает серийность производства, повышает эффективности обработки и снижает влияние человеческого фактора.</p>
+                        
+                        <div class="row tabs-desc__application-area d-flex justify-content-between">
+                           <!-- card-1 -->
+                           <div class="tabs-desc__application-area-card">
+                              <h3 class="title-h3 tabs-desc__application-area-card-title">Машиностроение</h3>
+                              <div class="tabs-desc__application-area-card-image">
+                                 <img src="img/description/app-01.png" alt="#">
+                              </div>
+                           </div>
+                           <!-- card-2 -->
+                           <div class="tabs-desc__application-area-card">
+                              <h3 class="title-h3 tabs-desc__application-area-card-title">Автомобилестроение</h3>
+                              <div class="tabs-desc__application-area-card-image">
+                                 <img src="img/description/app-02.png" alt="#">
+                              </div>
+                           </div>
+                           <!-- card-3 -->
+                           <div class="tabs-desc__application-area-card">
+                              <h3 class="title-h3 tabs-desc__application-area-card-title">Тяжелая промышленность</h3>
+                              <div class="tabs-desc__application-area-card-image">
+                                 <img src="img/description/app-03.png" alt="#">
+                              </div>
+                           </div>
+                           <!-- card-4 -->
+                           <div class="tabs-desc__application-area-card">
+                              <h3 class="title-h3 tabs-desc__application-area-card-title">Изготовление деталей</h3>
+                              <div class="tabs-desc__application-area-card-image">
+                                 <img src="img/description/app-04.png" alt="#">
+                              </div>
+                           </div>
+                        </div>
+                        <!-- tabs-desc__feature -->
+                        <div class="tabs-desc__feature">
+                           <h2 class="tabs-desc__title title-h2">КОНСТРУКТИВНЫЕ ОСОБЕННОСТИ:</h2>
+                           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+
+                              
+
+                              <div class="col mb-4">
+                              <div class="card h-100">
+                                 <div class="card-box-image">
+                                    <img src="img/description/features-01.jpg" class="card-img-top" alt="...">
+                                 </div>                                 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Литая станина</h5>
+                                    <p class="card-text">Литая станина усилена ребрами жесткости. V-образные закаленные и отшлифованные направляющие станины покрыты специальным покрытием Turcite-B для перемещения с минимальным износом и трением.</p>
+                                 </div>
+                              </div>
+                              </div>
+                              <div class="col mb-4">
+                              <div class="card h-100">
+                                 <div class="card-box-image">
+                                    <img src="img/description/features-02.jpg" class="card-img-top" alt="...">
+                                 </div> 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Автоматическая система смазки</h5>
+                                    <p class="card-text">Автоматическая система смазки направляющих и ШВП обеспечивает централизованную своевременную смазку по основным движущимся элементам – ШВП, направляющим, что сокращает их износ, повышает плавность хода.</p>
+                                 </div>
+                              </div>
+                              </div>
+                              <div class="col mb-4">
+                              <div class="card h-100">
+                                 <div class="card-box-image">
+                                    <img src="img/description/features-03.jpg" class="card-img-top" alt="...">
+                                 </div> 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Бесступенчатая регулировка </h5>
+                                    <p class="card-text">Бесступенчатая регулировка скорости шпинделя позволяет производить регулировку оборотов шпинделя во всем диапазоне без остановки процесса обработки.</p>
+                                 </div>
+                              </div>
+                              </div>
+                              <div class="col mb-4">
+                              <div class="card h-100">
+                                 <div class="card-box-image">
+                                    <img src="img/description/features-04.jpg" class="card-img-top" alt="...">
+                                 </div> 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Револьверная голова – 6 позиционная</h5>
+                                    <p class="card-text">В стандартную комплектацию входит 6-ти позиционная револьверная головка, оснащенная муфтой для быстрой и плавной индексации инструмента. Смена инструмента происходит за 1-2 сек.</p>
+                                 </div>
+                              </div>
+                              </div>
+                              <div class="col mb-4">
+                                 <div class="card h-100">
+                                    <div class="card-box-image">
+                                       <img src="img/description/features-05.jpg" class="card-img-top" alt="...">
+                                    </div> 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Шпиндельный узел </h5>
+                                    <p class="card-text">Шпиндель изготовлен по технологии и под контролем специалистов IBAG Швейцария.</p>
+
+                                    <p class="card-text"></p>На станках установлен модернизированный усиленный шпиндель с крутящим моментом 1300 Нм (серия СКЕ6150), что является лучшим показателем в своем классе.</p>
+                                 </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     
+                     <!-- TAB-3 -->
+                     <div id="tab-3" class="tabs-content__item tabs-desc">
+                        <h2 class="tabs-desc__title title-h2">3.Серия CUTEX-160A MC</h2>
+                        <p class="tabs-desc__text text">Станки серии СКЕ предназначены для токарной обработки наружных и внутренних поверхностей деталей типа тел вращения со ступенчатым и криволинейным профилем различной сложности, включая нарезание резьбы, сверление, зенкерование. Обрабатываемый материал: сталь, чугун, легированные сплавы (нержавейка), цветные металлы и легкие сплавы.</p>
+                        <h2 class="tabs-desc__title title-h2">ОБЛАСТЬ ПРИМЕНЕНИЯ:</h2>
+                        <p class="tabs-desc__text text">Токарные станки с ЧПУ серии CKE нашли широкое применение в машиностроительном производстве. В основном используются при мелко- или среднесерийном изготовлении деталей, в ремонтных мастерских, в основных цехах механической обработки. Использование системы ЧПУ позволяет изготавливать детали со сложной конфигурацией, значительно увеличивает серийность производства, повышает эффективности обработки и снижает влияние человеческого фактора.</p>
+                        
+                        <div class="row tabs-desc__application-area d-flex justify-content-between">
+                           <!-- card-1 -->
+                           <div class="tabs-desc__application-area-card">
+                              <h3 class="title-h3 tabs-desc__application-area-card-title">Машиностроение</h3>
+                              <div class="tabs-desc__application-area-card-image">
+                                 <img src="img/description/app-01.png" alt="#">
+                              </div>
+                           </div>
+                           <!-- card-2 -->
+                           <div class="tabs-desc__application-area-card">
+                              <h3 class="title-h3 tabs-desc__application-area-card-title">Автомобилестроение</h3>
+                              <div class="tabs-desc__application-area-card-image">
+                                 <img src="img/description/app-02.png" alt="#">
+                              </div>
+                           </div>
+                           <!-- card-3 -->
+                           <div class="tabs-desc__application-area-card">
+                              <h3 class="title-h3 tabs-desc__application-area-card-title">Тяжелая промышленность</h3>
+                              <div class="tabs-desc__application-area-card-image">
+                                 <img src="img/description/app-03.png" alt="#">
+                              </div>
+                           </div>
+                           <!-- card-4 -->
+                           <div class="tabs-desc__application-area-card">
+                              <h3 class="title-h3 tabs-desc__application-area-card-title">Изготовление деталей</h3>
+                              <div class="tabs-desc__application-area-card-image">
+                                 <img src="img/description/app-04.png" alt="#">
+                              </div>
+                           </div>
+                        </div>
+                        <!-- tabs-desc__feature -->
+                        <div class="tabs-desc__feature">
+                           <h2 class="tabs-desc__title title-h2">КОНСТРУКТИВНЫЕ ОСОБЕННОСТИ:</h2>
+                           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">                             
+
+                              <div class="col mb-4">
+                              <div class="card h-100">
+                                 <div class="card-box-image">
+                                    <img src="img/description/features-01.jpg" class="card-img-top" alt="...">
+                                 </div>                                 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Литая станина</h5>
+                                    <p class="card-text">Литая станина усилена ребрами жесткости. V-образные закаленные и отшлифованные направляющие станины покрыты специальным покрытием Turcite-B для перемещения с минимальным износом и трением.</p>
+                                 </div>
+                              </div>
+                              </div>
+                              <div class="col mb-4">
+                              <div class="card h-100">
+                                 <div class="card-box-image">
+                                    <img src="img/description/features-02.jpg" class="card-img-top" alt="...">
+                                 </div> 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Автоматическая система смазки</h5>
+                                    <p class="card-text">Автоматическая система смазки направляющих и ШВП обеспечивает централизованную своевременную смазку по основным движущимся элементам – ШВП, направляющим, что сокращает их износ, повышает плавность хода.</p>
+                                 </div>
+                              </div>
+                              </div>
+                              <div class="col mb-4">
+                              <div class="card h-100">
+                                 <div class="card-box-image">
+                                    <img src="img/description/features-03.jpg" class="card-img-top" alt="...">
+                                 </div> 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Бесступенчатая регулировка </h5>
+                                    <p class="card-text">Бесступенчатая регулировка скорости шпинделя позволяет производить регулировку оборотов шпинделя во всем диапазоне без остановки процесса обработки.</p>
+                                 </div>
+                              </div>
+                              </div>
+                              <div class="col mb-4">
+                              <div class="card h-100">
+                                 <div class="card-box-image">
+                                    <img src="img/description/features-04.jpg" class="card-img-top" alt="...">
+                                 </div> 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Револьверная голова – 6 позиционная</h5>
+                                    <p class="card-text">В стандартную комплектацию входит 6-ти позиционная револьверная головка, оснащенная муфтой для быстрой и плавной индексации инструмента. Смена инструмента происходит за 1-2 сек.</p>
+                                 </div>
+                              </div>
+                              </div>
+                              <div class="col mb-4">
+                                 <div class="card h-100">
+                                    <div class="card-box-image">
+                                       <img src="img/description/features-05.jpg" class="card-img-top" alt="...">
+                                    </div> 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Шпиндельный узел </h5>
+                                    <p class="card-text">Шпиндель изготовлен по технологии и под контролем специалистов IBAG Швейцария.</p>
+
+                                    <p class="card-text"></p>На станках установлен модернизированный усиленный шпиндель с крутящим моментом 1300 Нм (серия СКЕ6150), что является лучшим показателем в своем классе.</p>
+                                 </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- TAB-4 -->
+                     <div id="tab-4" class="tabs-content__item tabs-desc">
+                        <h2 class="tabs-desc__title title-h2">4.Серия CUTEX-160A MC</h2>
+                        <p class="tabs-desc__text text">Станки серии СКЕ предназначены для токарной обработки наружных и внутренних поверхностей деталей типа тел вращения со ступенчатым и криволинейным профилем различной сложности, включая нарезание резьбы, сверление, зенкерование. Обрабатываемый материал: сталь, чугун, легированные сплавы (нержавейка), цветные металлы и легкие сплавы.</p>
+                        <h2 class="tabs-desc__title title-h2">ОБЛАСТЬ ПРИМЕНЕНИЯ:</h2>
+                        <p class="tabs-desc__text text">Токарные станки с ЧПУ серии CKE нашли широкое применение в машиностроительном производстве. В основном используются при мелко- или среднесерийном изготовлении деталей, в ремонтных мастерских, в основных цехах механической обработки. Использование системы ЧПУ позволяет изготавливать детали со сложной конфигурацией, значительно увеличивает серийность производства, повышает эффективности обработки и снижает влияние человеческого фактора.</p>
+                        
+                        <div class="row tabs-desc__application-area d-flex justify-content-between">
+                           <!-- card-1 -->
+                           <div class="tabs-desc__application-area-card">
+                              <h3 class="title-h3 tabs-desc__application-area-card-title">Машиностроение</h3>
+                              <div class="tabs-desc__application-area-card-image">
+                                 <img src="img/description/app-01.png" alt="#">
+                              </div>
+                           </div>
+                           <!-- card-2 -->
+                           <div class="tabs-desc__application-area-card">
+                              <h3 class="title-h3 tabs-desc__application-area-card-title">Автомобилестроение</h3>
+                              <div class="tabs-desc__application-area-card-image">
+                                 <img src="img/description/app-02.png" alt="#">
+                              </div>
+                           </div>
+                           <!-- card-3 -->
+                           <div class="tabs-desc__application-area-card">
+                              <h3 class="title-h3 tabs-desc__application-area-card-title">Тяжелая промышленность</h3>
+                              <div class="tabs-desc__application-area-card-image">
+                                 <img src="img/description/app-03.png" alt="#">
+                              </div>
+                           </div>
+                           <!-- card-4 -->
+                           <div class="tabs-desc__application-area-card">
+                              <h3 class="title-h3 tabs-desc__application-area-card-title">Изготовление деталей</h3>
+                              <div class="tabs-desc__application-area-card-image">
+                                 <img src="img/description/app-04.png" alt="#">
+                              </div>
+                           </div>
+                        </div>
+                        <!-- tabs-desc__feature -->
+                        <div class="tabs-desc__feature">
+                           <h2 class="tabs-desc__title title-h2">КОНСТРУКТИВНЫЕ ОСОБЕННОСТИ:</h2>
+                           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">                          
+
+                              <div class="col mb-4">
+                              <div class="card h-100">
+                                 <div class="card-box-image">
+                                    <img src="img/description/features-01.jpg" class="card-img-top" alt="...">
+                                 </div>                                 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Литая станина</h5>
+                                    <p class="card-text">Литая станина усилена ребрами жесткости. V-образные закаленные и отшлифованные направляющие станины покрыты специальным покрытием Turcite-B для перемещения с минимальным износом и трением.</p>
+                                 </div>
+                              </div>
+                              </div>
+                              <div class="col mb-4">
+                              <div class="card h-100">
+                                 <div class="card-box-image">
+                                    <img src="img/description/features-02.jpg" class="card-img-top" alt="...">
+                                 </div> 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Автоматическая система смазки</h5>
+                                    <p class="card-text">Автоматическая система смазки направляющих и ШВП обеспечивает централизованную своевременную смазку по основным движущимся элементам – ШВП, направляющим, что сокращает их износ, повышает плавность хода.</p>
+                                 </div>
+                              </div>
+                              </div>
+                              <div class="col mb-4">
+                              <div class="card h-100">
+                                 <div class="card-box-image">
+                                    <img src="img/description/features-03.jpg" class="card-img-top" alt="...">
+                                 </div> 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Бесступенчатая регулировка </h5>
+                                    <p class="card-text">Бесступенчатая регулировка скорости шпинделя позволяет производить регулировку оборотов шпинделя во всем диапазоне без остановки процесса обработки.</p>
+                                 </div>
+                              </div>
+                              </div>
+                              <div class="col mb-4">
+                              <div class="card h-100">
+                                 <div class="card-box-image">
+                                    <img src="img/description/features-04.jpg" class="card-img-top" alt="...">
+                                 </div> 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Револьверная голова – 6 позиционная</h5>
+                                    <p class="card-text">В стандартную комплектацию входит 6-ти позиционная револьверная головка, оснащенная муфтой для быстрой и плавной индексации инструмента. Смена инструмента происходит за 1-2 сек.</p>
+                                 </div>
+                              </div>
+                              </div>
+                              <div class="col mb-4">
+                                 <div class="card h-100">
+                                    <div class="card-box-image">
+                                       <img src="img/description/features-05.jpg" class="card-img-top" alt="...">
+                                    </div> 
+                                 <div class="card-body">
+                                    <h5 class="card-title title-h3">Шпиндельный узел </h5>
+                                    <p class="card-text">Шпиндель изготовлен по технологии и под контролем специалистов IBAG Швейцария.</p>
+
+                                    <p class="card-text"></p>На станках установлен модернизированный усиленный шпиндель с крутящим моментом 1300 Нм (серия СКЕ6150), что является лучшим показателем в своем классе.</p>
+                                 </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div> 
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="form">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-8 offset-sm-2 form-top">
+                  <h2 class="form-top__title title-h2 text-center">Задайте вопрос техническому специалисту</h2>
+                  <p class="form-top__text text-center">Оставьте свои контактные данные, наш технический специалист свяжется с вами в кратчайшие сроки. Все поля являются обязательными.</p>
+               </div>
+            </div>            
+            <div class="row">
+               <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3">
+                  <form>
+                     <div class="form-group">
+                        <input type="text" class="form-control form-control" placeholder="ФИО">
+                     </div>
+                     <div class="form-row">
+                        
+                        <div class="form-group col-sm-6">
+                           <input type="name" class="form-control" placeholder="Ваш телефон">
+                        </div>
+                        <div class="form-group col-sm-6">
+                           <input type="email" class="form-control" placeholder="Ваш e-mail">
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <input type="text" class="form-control form-control--message" placeholder="Ваше сообщение">
+                     </div>
+                     <label for="#check" class="label">
+                        <input class="checkbox" type="checkbox" name="#" id="check">
+                        <div>
+                           <a class="form-consent__link" href="#">Согласие на обработку персональных данных</a>
+                           <a class="form-consent__link form-consent__conf" href="#">Политика конфеденциальности</a>
+                        </div>                        
+                     </label>
+                     <div class="form-row">
+                        <div class="col-lg-4 offset-lg-4 col-sm-6 offset-sm-3">
+                           <button class="form-btn button" type="submit">Отправить запрос</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>            
+         </div>
+      </section>
+
+      <section class="product-content">
+         <div class="container">
+            <h2 class="tabs-desc__title tabs-desc__title-bottom title-h2">Схожие товары</h2>
+            <div class="row">
+               <div class="slider">
+                  <div class="slider__item"><a href="#" class="slider__link"><img src="img/products/1.png" alt="#"><h5 class="slider__item-title">Токарно-фрезерные обрабатывающие центры с ЧПУ <span>CUTEX 240A STD</span></h5></a></div>
+                  <div class="slider__item"><a href="#" class="slider__link"><img src="img/products/2.png" alt="#"><h5 class="slider__item-title">Токарно-фрезерные обрабатывающие центры с ЧПУ <span>CUTEX 240A STD</span></h5></a></div>
+                  <div class="slider__item"><a href="#" class="slider__link"><img src="img/products/3.png" alt="#"><h5 class="slider__item-title">Токарно-фрезерные обрабатывающие центры с ЧПУ <span>CUTEX 240A STD</span></h5></a></div>
+                  <div class="slider__item"><a href="#" class="slider__link"><img src="img/products/4.png" alt="#"><h5 class="slider__item-title">Токарно-фрезерные обрабатывающие центры с ЧПУ <span>CUTEX 240A STD</span></h5></a></div>
+
+                  <div class="slider__item"><a href="#" class="slider__link"><img src="img/products/1.png" alt="#"><h5 class="slider__item-title">Токарно-фрезерные обрабатывающие центры с ЧПУ <span>CUTEX 240A STD</span></h5></a></div>
+                  <div class="slider__item"><a href="#" class="slider__link"><img src="img/products/2.png" alt="#"><h5 class="slider__item-title">Токарно-фрезерные обрабатывающие центры с ЧПУ <span>CUTEX 240A STD</span></h5></a></div>
+                  <div class="slider__item"><a href="#" class="slider__link"><img src="img/products/3.png" alt="#"><h5 class="slider__item-title">Токарно-фрезерные обрабатывающие центры с ЧПУ <span>CUTEX 240A STD</span></h5></a></div>
+                  <div class="slider__item"><a href="#" class="slider__link"><img src="img/products/4.png" alt="#"><h5 class="slider__item-title">Токарно-фрезерные обрабатывающие центры с ЧПУ <span>CUTEX 240A STD</span></h5></a></div>
+
+                  <div class="slider__item"><a href="#" class="slider__link"><img src="img/products/1.png" alt="#"><h5 class="slider__item-title">Токарно-фрезерные обрабатывающие центры с ЧПУ <span>CUTEX 240A STD</span></h5></a></div>
+                  <div class="slider__item"><a href="#" class="slider__link"><img src="img/products/2.png" alt="#"><h5 class="slider__item-title">Токарно-фрезерные обрабатывающие центры с ЧПУ <span>CUTEX 240A STD</span></h5></a></div>
+                  <div class="slider__item"><a href="#" class="slider__link"><img src="img/products/3.png" alt="#"><h5 class="slider__item-title">Токарно-фрезерные обрабатывающие центры с ЧПУ <span>CUTEX 240A STD</span></h5></a></div>
+                  <div class="slider__item"><a href="#" class="slider__link"><img src="img/products/4.png" alt="#"><h5 class="slider__item-title">Токарно-фрезерные обрабатывающие центры с ЧПУ <span>CUTEX 240A STD</span></h5></a></div>
+
+                  <div class="slider__item"><a href="#" class="slider__link"><img src="img/products/1.png" alt="#"><h5 class="slider__item-title">Токарно-фрезерные обрабатывающие центры с ЧПУ <span>CUTEX 240A STD</span></h5></a></div>
+                  <div class="slider__item"><a href="#" class="slider__link"><img src="img/products/2.png" alt="#"><h5 class="slider__item-title">Токарно-фрезерные обрабатывающие центры с ЧПУ <span>CUTEX 240A STD</span></h5></a></div>
+                  <div class="slider__item"><a href="#" class="slider__link"><img src="img/products/3.png" alt="#"><h5 class="slider__item-title">Токарно-фрезерные обрабатывающие центры с ЧПУ <span>CUTEX 240A STD</span></h5></a></div>
+                  <div class="slider__item"><a href="#" class="slider__link"><img src="img/products/4.png" alt="#"><h5 class="slider__item-title">Токарно-фрезерные обрабатывающие центры с ЧПУ <span>CUTEX 240A STD</span></h5></a></div>
+                  
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="request">
+         <div class="container">
+            <div class="row request-box">
+               <div class="col row request-block">
+                  <p class="col-md-9 request-block__text">Остались вопросы или хотите получить консультацию оставьте заявку и мы свяжемся с Вами.</p>
+                  <div class="col-md-3 request-block__button">
+                     <a href="#" class="request-block__button-btn btn-request">Свяжитесь с нами</a>
+                  </div>
+               </div>
+            </div>
+         </div>   
+      </section>
+   </main>
+   <footer class="footer">
+      <div class="container">
+         <div class="row footer-block">
+            <div class="col-sm-4 col-lg-3  footer-column-1 footer-contact">
+               <div class="footer-contact__logo">
+                  <a href="#"><img src="img/logo-footer.svg" alt="Грант-Трейд"></a>
+               </div>
+               <h4 class="title-h4 footer-contact__title">Контактная информация</h4>
+               <div class="footer-contact__phone phone"><a class="footer-contact-link"
+                  href="tel:+7 (916) 416-11-38">+7 (916) 416-11-38</a>
+               </div>
+               <div class="footer-contact__email email"><a class="footer-contact-link"
+                  href="email:info@gt-trade.ru">info@gt-trade.ru</a>
+               </div>               
+               <div class="footer-contact__mode">пн-пт с 10:00 до 19:00</div>
+               
+            </div>
+            <div class="col-sm-4 col-lg-3 footer-column-2 ">               
+               <ul class="footer-nav accordion-item">
+                  <li class="footer-nav__item accordion-item__trigger"><span class="">Оборудование</span> 
+                     <ul class="footer-nav__subcategory accordion-item__content">
+                        <li class="footer-nav__subcategory-item"><a class="footer-nav__subcategory-link" href="#">Оборудование механической обработки</a></li>
+                        <li class="footer-nav__subcategory-item"><a class="footer-nav__subcategory-link" href="#">Кузнечно-прессовое оборудование</a></li>
+                        <li class="footer-nav__subcategory-item"><a class="footer-nav__subcategory-link" href="#">Сварочное оборудование</a></li>
+                        <li class="footer-nav__subcategory-item"><a class="footer-nav__subcategory-link" href="#">Обработка и изготовление композита</a></li>
+                        <li class="footer-nav__subcategory-item"><a class="footer-nav__subcategory-link" href="#">Окрасочное оборудование</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-sm-4 col-lg-3  footer-column-3 footer-nav">
+               <ul class="footer-nav__subcategory accordion-item__content">
+                  <li class="footer-nav__subcategory-item"><a class="footer-nav__subcategory-link" href="#">Подъемно-транспортное оборудование</a></li>
+                  <li class="footer-nav__subcategory-item"><a class="footer-nav__subcategory-link" href="#">Гальваническое оборудование</a></li>
+                  <li class="footer-nav__subcategory-item"><a class="footer-nav__subcategory-link" href="#">Оборудование для обработки неметаллов</a></li>
+                  <li class="footer-nav__subcategory-item"><a class="footer-nav__subcategory-link" href="#">Термическое оборудование</a></li>
+               </ul>
+            </div>
+            <div class="col-lg-3  footer-column-4 footer-nav">
+               <ul class="footer-nav__wrapper">
+                  <div class="footer-nav__block">
+                     <li class="footer-nav__item"><a class="footer-nav__link" href="#">Оснастка и инструмент</a></li>
+                     <li class="footer-nav__item"><a class="footer-nav__link" href="#">Сервис</a></li>
+                  </div>
+                  <div class="footer-nav__block">
+                     <li class="footer-nav__item"><a class="footer-nav__link" href="#">Капитальный ремонт оборудования</a></li>
+                     <li class="footer-nav__item"><a class="footer-nav__link" href="#">О компании</a></li>
+                  </div>
+                  <div class="footer-nav__block">
+                     <li class="footer-nav__item"><a class="footer-nav__link" href="#">Бренды</a></li>
+                     <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
+                  </div>
+                  
+               </ul>
+            </div>
+         </div>
+         <div class="row footet-copyright">
+            <div class="col footet-copyright__box">
+               <div class="footet-copyright__box-info">Все права защищены, копирование материалов только с разрешения администрации сайта. &copy; Грант-Трейд - 2020</div>
+               <div class="footet-copyright__box-creator">Сделано в <a class="footet-copyright__box-link" href="#"> MooW studio</a> - 2020</div>
+            </div>
+         </div>
+      </div>      
+   </footer>
+
+
+
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+   <!-- Wow -->
+   <script src="libs/wow.min.js"></script>
+   <script>
+      new WOW().init();
+  </script>
+   <!-- Слайдер Slick Slider -->
+   <script src="libs/slick.min.js"></script>
+   <!-- Fancybox -->
+   <script src="libs/jquery.fancybox.min.js"></script>
+   <!-- Script -->
+   <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+@import 'base/null';
+@import 'base/variables';
+@import 'base/mixin';
+@import 'base/base';
+
+@import 'blocks/header-top';
+@import 'blocks/header-nav';
+@import 'blocks/burger-menu';
+@import 'blocks/header-nav-dropdown';
+@import 'blocks/navigation';
+@import 'blocks/product-slider';
+@import 'blocks/product-desc';
+@import 'blocks/tabs';
+@import 'blocks/tabs-tech-desc';
+@import 'blocks/form';
+@import 'blocks/product-content';
+@import 'blocks/request';
+@import 'blocks/footer';
+@import 'blocks/footer-copyright';
+@import 'blocks/footer-accordion';
+
+@import 'media/media';

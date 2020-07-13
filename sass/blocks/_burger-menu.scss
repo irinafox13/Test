@@ -1,0 +1,84 @@
+
+.header-nav {
+   width: 100%;
+   height: auto;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   flex-direction: column;
+   z-index: 10;
+   visibility: hidden;
+   opacity: 0;
+   background-color: $lightColor;
+   transition: .3s linear;
+   margin: 0;
+   .nav-link {
+      color: $primaryColor;
+      display: block;
+      padding: 10px 15px;
+      position: relative;
+      font-size: 18px;
+      @include transitionColor;
+      &:hover {
+         color: $btnColor2;
+      }
+   }
+ }
+ .header-nav.show {
+   visibility: visible;
+   opacity: 1;
+ }
+ 
+
+ .burger {
+   @include flex-center;
+   z-index: 100;
+   position: relative;
+   width: 38px;
+   height: 38px;
+   background-color: $btnColor2;
+   cursor: pointer;
+ }
+ .burger span {	
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 16px;
+   height: 2px;
+   background-color: $lightColor;
+   transition: background-color .3s ease-in-out;
+ }
+ .burger span:before,
+ .burger span:after {
+   content: "";
+   position: absolute;
+   width: 16px;
+   height: 2px;
+   background-color: $lightColor;
+   transform: rotate(0deg);
+   transition: background-color .3s ease-in-out, 
+   transform .4s ease-in-out, top .4s ease-in-out;
+ }
+ .burger span:before {
+   top: -8px;
+ }
+ .burger span:after {
+   top: 8px;
+ }
+ .burger.close {
+    background-color: transparent;
+ }
+ .burger.close span {
+   background-color: transparent;
+ }
+ .burger.close span:before {
+   background-color: $btnColor2;
+   transform: rotate(45deg);
+   top: 0;
+ }
+ .burger.close span:after {
+   background-color: $btnColor2;
+   transform: rotate(-45deg);
+   top: 0;
+ }

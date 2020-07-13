@@ -1,0 +1,113 @@
+*, *::after, *::before {
+   box-sizing: border-box;
+}
+body, html {
+   height: 100%;
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   background-color: $bg;
+   font-family: $fontFamily;
+   font-size: $fontSize;
+   font-weight: 400;
+   line-height: 1.2;
+   color: $primaryColor;
+   overflow-x: hidden;
+}
+img {
+   max-width: 100%;
+   max-height: auto;
+}
+.container {
+   width: 100%;      
+   max-width: $containerWidth;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+.button {
+   display: block;
+   font-family: $fontFamilySecondary;
+   font-size: 12px;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 0.8px;
+   color: $lightColor;
+   padding: 16px 31px;
+   background-color: $btnColor2;
+   transition: background-color 0.3s linear,
+               box-shadow 0.3s linear;
+   &:hover {
+      background-color: darken($color: $btnColor2, $amount: 10%);
+      box-shadow: 0 0 3px 1px rgba($color: $borderFormColor, $alpha: 0.8);
+   } 
+}
+.btn-request {
+   display: block;
+   color: $lightColor;
+   text-transform: uppercase;
+   font-family: $fontFamilySecondary;
+   font-weight: 700;
+   font-size: 15px;
+   text-align: center;
+   text-decoration: none;
+   background-color: $btnColor;
+   padding: 18px 0;
+   margin: 25px 0 42px;
+   transition: background-color 0.3s linear,
+               box-shadow 0.3s linear;
+   &:hover {
+      background-color: darken($color: $btnColor, $amount: 12%);
+      color: $lightColor;
+      box-shadow: 0 0 1px 1px rgba($color: $borderFormColor, $alpha: 0.6);
+   }
+}
+.title {
+   font-family: $fontFamilySecondary;
+   font-size: $fontSize-h1;
+   font-weight: 700;
+   line-height: 140%;
+   letter-spacing: 1.9px;
+}
+.title-h2 {
+   font-family: $fontFamilySecondary;
+   font-weight: 700;
+   font-size: 20px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+.title-h3 {
+   font-size: $fontSize-h3;
+   font-family: $fontFamilySecondary;
+   font-weight: 600;
+   letter-spacing: 1.1px;
+}
+.title-h4 {
+   text-transform: uppercase;
+   font-family: $fontFamilyMedium;
+   font-weight: 500;
+   font-size: 16px;
+   color: $lightColor;
+}
+.text {
+   color: $secondaryColor;
+   line-height: 1.4;
+   letter-spacing: 0.1px;
+}
+.form-control::-webkit-input-placeholder {
+	color: $textForm;
+	opacity: 1;
+}
+.form-control:-moz-placeholder {
+	color: $textForm;
+	opacity: 1;
+}
+.form-control::-moz-placeholder {
+	color: $textForm;
+	opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+	color: $textForm;
+	opacity: 1;
+}

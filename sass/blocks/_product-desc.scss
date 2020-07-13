@@ -1,0 +1,134 @@
+.product-desc {
+   &__table {
+      position: relative;
+      padding-bottom: 5px;
+      padding-top: 20px;
+      margin-top: 20px;
+      @include flex-sb;
+      &::after {
+         content: '';
+         display: block;
+         width: 100%;
+         height: 1px;
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         background-color: $lineTableColor;
+      }
+      &::before {
+         content: '';
+         display: block;
+         width: 100%;
+         height: 1px;
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         background-color: $lineTableColor;
+      }
+      &-subtitle {
+         display: flex;
+         flex-direction: column;
+         padding: 0;
+         &-item {
+            padding-bottom: 17px;
+         }
+
+      }
+      &-parametr {
+         display: flex;
+         flex-direction: column;
+         &-item {
+            padding-bottom: 17px;
+            font-family: $fontFamilyBold;
+            font-weight: 700;
+         }
+      }      
+   }
+   &__box {      
+      display: flex;
+      flex-direction: column;
+   }
+   &__price {      
+      color: $priceColor;
+      font-size: 18px;
+      margin-top: 20px;
+      span {
+         margin-left: 27px;
+         font-family: $fontFamilyBold;
+         font-weight: 700;
+         font-size: $fontSize-h2;
+         color: #007EDD;
+      }
+      &-text {
+         color: $greyColor;
+         margin-top: 20px;
+         font-size: 13px;
+         line-height: 1.5;
+      }
+   }
+   &__request {
+      width: 100%;
+      padding: 0;    
+      display: flex;
+      &-btn {
+         @include flex-center;
+         flex-shrink: 0;
+         padding: 20px 42px;
+         font-size: 12px;
+         margin: 10px 0 42px;
+      }  
+   }
+   &__additionally {
+      &-item {
+         position: relative;
+         padding-left: 40px;
+         min-height: 40px;
+         &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $circleDescColor;
+         }
+      }         
+      &-link {
+         display: block;
+         font-family: $fontFamilySecondary;
+         font-weight: 600;
+         font-size: 12px;
+         color: $primaryColor;
+         text-decoration: underline;
+         padding: 5px;
+         margin-bottom: 15px;
+         @include transitionColor;
+         &::before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 0;
+            width: 30px;
+            height: 1px;
+            background-color: $textForm;
+            transform: rotate(45deg);
+         }
+         &::after {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 0;
+            width: 30px;
+            height: 1px;
+            background-color: $textForm;
+            transform: rotate(-45deg);
+         }
+         &:hover {
+            color: $btnColor2;
+         }
+      }
+   }
+}

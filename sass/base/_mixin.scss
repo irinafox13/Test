@@ -1,0 +1,39 @@
+
+@mixin flex-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+@mixin flex-sb {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+@mixin borderSearch {
+   border: 1px solid $borderSearchColor;
+}
+
+@mixin bottomLine {
+   position: absolute;
+   left: 0;
+   display: block;
+   width: 100%;
+   height: 3px;
+   background-color: $btnColor2;
+   z-index: 10;
+}
+
+@mixin sectionLine {
+   position: absolute;
+   bottom: -3px;
+   left: 0;
+   right: 0;
+   width: 100%;
+   height: 1px;
+   background-color: $lineColor;
+}
+
+@mixin transitionColor {
+   transition: color 0.3s linear;
+}

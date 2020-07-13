@@ -1,0 +1,20 @@
+// .accordion-item {
+//    &__trigger {
+
+//    }
+//    &__content {
+
+//    }
+// }
+.accordion-item__trigger {
+   display: block;
+   color: $lightColor;
+   font-family: $fontFamilyMedium;
+   font-weight: 500;
+   font-size: 16px;
+   @include transitionColor;
+   margin-bottom: 25px;
+}
+.accordion-item__content {
+   display: block;
+}

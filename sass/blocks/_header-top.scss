@@ -1,0 +1,82 @@
+.header {
+   position: relative;
+   &::after {
+      content: '';
+      @include sectionLine;
+   }
+   &-top {
+      margin: 20px 0;
+      &__logo {
+         display: flex;
+         a {
+            flex-shrink: 0;
+            img {
+               width: 145px;
+            }
+         }
+      }
+      &__search {
+         display: none;
+         position: relative;
+         
+         .btn {
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 5px;
+            box-shadow: 0;
+            border: 0;
+            outline: 0;
+         }
+      }
+   }
+   &-link {
+      text-decoration: none;
+      color: $primaryColor;
+   }
+   &__email {    
+      display: none;
+      padding-bottom: 5px;  
+      font-family: $fontFamilySecondary;
+      font-weight: 600;
+      border-bottom: 1px solid #007EDD;
+      margin-left: 15px;
+      letter-spacing: 1.2px;
+      flex-shrink: 0;
+      font-size: 12px;
+   }
+   &__phone {
+      display: none;
+      font-family: $fontFamilySecondary;
+      font-weight: 600;
+      margin-left: 4%;
+      flex-shrink: 0;
+      font-size: 12px;
+   }
+   
+   &__button {
+      display: none;
+      margin-left: 10px;
+      flex-shrink: 0;
+      padding: 16px 18px;
+   }
+}
+.form-inline {
+   margin-left: 10%;
+   .form-search {
+      display: block;
+      width: 100%;
+      height: 40px;
+      @include borderSearch;
+      padding-left: 15px;
+      font-size: 14px;
+      transition: border-color 0.3s linear;
+      &:hover {
+         border-color: $btnColor2;
+      }
+      &:focus {
+         box-shadow: 0 0 1px 1px rgba($color: $borderFormColor, $alpha: 0.6);
+      }
+   }
+}

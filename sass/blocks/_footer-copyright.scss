@@ -1,0 +1,25 @@
+.footet-copyright {
+   padding-bottom: 35px;
+   &__box {
+      color: $footerCopyright;
+      @include flex-center;
+      flex-wrap: wrap;
+      &-info {         
+         text-align: center;
+         margin-bottom: 10px;
+         margin-right: 15px;
+      }
+      &-creator {
+         text-align: center;
+
+      }
+      &-link {
+         color: $footerCopyright;
+         text-decoration: underline;
+         @include transitionColor;
+         &:hover {
+            color: $btnColor2;
+         }
+      }
+   }
+}

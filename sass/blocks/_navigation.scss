@@ -1,0 +1,41 @@
+.navigation {
+   // padding: 50px 15px 45px 15px;
+   padding: 30px 15px 25px 15px;
+   &__list {
+      display: flex;
+      align-items: center;
+      overflow-x: scroll;
+   }
+   &__item {
+      display: inline-block;
+      position: relative;
+      padding-right: 3%;
+      flex-shrink: 0;
+      &:not(:last-child)::after {
+         content: '';
+         display: block;
+         position: absolute;
+         top: 50%;
+         right: 13px;
+         transform: translateY(-50%);
+         width: 3px;
+         height: 1px;
+         background-color: $borderFormColor;
+      }
+   }
+   &__link {
+      color: $borderFormColor;
+      font-size: 10px;
+      text-decoration: none;
+      @include transitionColor;
+      &:hover {
+         color: $btnColor2;
+      }
+      &--active {
+         color: $primaryColor;
+         &:hover {
+            color: inherit;
+         }
+      }
+   }
+}

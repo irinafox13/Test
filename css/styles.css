@@ -517,7 +517,7 @@ img {
   display: block;
   position: absolute;
   top: 50%;
-  right: 13px;
+  right: 2px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 3px;
@@ -1261,8 +1261,9 @@ img {
 }
 
 .slider__item img {
+  display: block;
   height: 200px;
-  margin-bottom: 25px;
+  margin: 0 auto 25px auto;
 }
 
 .slider__item-title {
@@ -1560,6 +1561,12 @@ img {
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) and (max-width: 576px) {
+  .slider-small .slick-prev {
+    left: 0;
+  }
+  .slider-small .slick-next {
+    right: 0;
+  }
   .accordion-item {
     margin-bottom: 20px;
   }
@@ -1568,7 +1575,7 @@ img {
     cursor: pointer;
   }
   .accordion-item__trigger:after {
-    content: url(../../img/down.svg);
+    content: url(../img/down.svg);
     position: absolute;
     top: 0;
     right: 0;
@@ -1584,6 +1591,9 @@ img {
 }
 
 @media only screen and (min-width: 480px) {
+  .navigation__item:not(:last-child)::after {
+    right: 6px;
+  }
   .request .container {
     padding: 0 15px;
   }
@@ -1724,6 +1734,9 @@ img {
 @media only screen and (min-width: 768px) {
   .title-h2 {
     font-size: 24px;
+  }
+  .navigation__item:not(:last-child)::after {
+    right: 12px;
   }
   .tabs-desc__title {
     margin-bottom: 35px;
@@ -1960,15 +1973,16 @@ img {
 @media only screen and (min-width: 768px) and (max-width: 1150px) {
   .header-top__search {
     position: relative;
+    margin-left: 10px;
   }
   .header-top__search .form-search {
     width: 40px;
     font-size: 0;
+    display: block;
   }
   .header-top__search .form-search.active {
-    display: inline-block;
-    position: absolute;
-    width: 270px;
+    display: block;
+    width: 180px;
     font-size: 12px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;

@@ -80,21 +80,35 @@ $(document).ready(function(){
 			e.preventDefault();
       });
       
-      // accordion-footer
-      $(window).resize(function() {         
-         if ( $(window).width() < 576 ) {
-         
-            $('.accordion-item__trigger').click(function (){
-               $(this).parent('.accordion-item').toggleClass('accordion-item--active');
-            });
-         };
-      });
+   // accordion-footer
+   $(window).resize(function() {         
+      if ( $(window).width() < 576 ) {
+      
+         $('.accordion-item__trigger').click(function (){
+            $(this).parent('.accordion-item').toggleClass('accordion-item--active');
+         });
+      };
+   });
 
       // search-active
-      $(".header-top__search .btn").click(function () {
-         $(".header-top__search .form-search").toggleClass("active");
+      
+   $('body').on('click', '.header-top__search .btn', function(e) {
+      if ($('.header-top__search .form-search').val() == '' ||  !$('.header-top__search .form-search').hasClass('active')) {
+         //* если текстовое поле пустое или свернуто - не даем форме отправиться
+         //* и сворачиваем/разворачиваем его
+         e.preventDefault();
+         e.stopPropagation();
+         $('.header-top__search .form-search').toggleClass('active');
+      }
       });
-            
+      //* не даем свернуться текстовому полю при клике на нём
+      $('body').on('click', '.header-top__search .form-search', function(e) {
+      e.stopPropagation();
+      });
+      //* сворачиваем поле при кли клике в любом месте
+      $('html').on('click', function(e) {
+         $('.header-top__search .form-search').removeClass('active');
+      });
 });
 
 // tabs
